@@ -12,27 +12,27 @@ const profile = {
   dish: "",
   sport: "",
   superpower: ""
-}
+};
 
 rl.question(`What's your name? Nicknames are also acceptable :)`, (answer) => {
-  profile.userName = answer
+  profile.userName = answer;
   rl.question(`What's an activity you like doing?)`, (answer) => {
-    profile.activity = answer
+    profile.activity = answer;
     rl.question(`Which meal is your favourite (eg: dinner, brunch, etc.)`, (answer) => {
-      profile.meal = answer
-       rl.question(`What's your favourite thing to eat for that meal?)`, (answer) => {
-        profile.dish = answer
+      profile.meal = answer;
+      rl.question(`What's your favourite thing to eat for that meal?)`, (answer) => {
+        profile.dish = answer;
         rl.question(`Which sport is your absolute favourite?)`, (answer) => {
-          profile.sport = answer
+          profile.sport = answer;
           rl.question(`What is your superpower? In a few words, tell us what you are amazing at)`, (answer) => {
-            profile.superpower = answer
-            console.log(profile)
+            profile.superpower = answer;
+            console.log(profile);
             rl.close();
           });
-         });
-       });
-    });   
-  })
+        });
+      });
+    });
+  });
 });
 
 
